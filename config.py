@@ -2,8 +2,8 @@ import torch
 
 
 # base LLM
-ZHIPU_MODEL_NAME = "glm-4-flash"
-ZHIPU_API_KEY = "a9d09b23922a4f1daccfc896ce087b80.R3uIADh7YBlDzlGq"
+ZHIPU_MODEL_NAME = "your_model_name"
+ZHIPU_API_KEY = "your_model_api_key"
 
 # pretrained model path
 PATH_BGE_M3 = "E:/models/m3e-base"
