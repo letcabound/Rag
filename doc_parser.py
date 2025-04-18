@@ -12,7 +12,7 @@ class DocParser(object):
     def __init__(self, file_path: str):
         self.file_path = file_path
 
-    def parse_and_split(self, chunk_size=128, chunk_overlap=50) -> list[Document]:
+    def parse_and_split(self, chunk_size=256, chunk_overlap=100) -> list[Document]:
         docs = PyPDFLoader(self.file_path).load()
 
         text_splitter = RecursiveCharacterTextSplitter(chunk_size=chunk_size, 

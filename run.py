@@ -28,7 +28,7 @@ def get_kn_by_query(question: str) -> str:
 
 def question_answer(query):
     llm = ChatZhipuAI(
-        model='glm-4-flash',
+        model= config.ZHIPU_MODEL_NAME,
         temperature=0.5,
         api_key = config.ZHIPU_API_KEY
     )
