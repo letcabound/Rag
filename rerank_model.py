@@ -5,7 +5,7 @@ from sentence_transformers.cross_encoder import CrossEncoder
 from langchain_core.documents import Document
 
 from doc_parser import DocParser
-from faiss_retriever import FaissRetriever
+from retriever_faiss import FaissRetriever
 
 CUDA_DEVICE = "cuda:0" if torch.cuda.is_available() else "cpu"
 

@@ -9,7 +9,9 @@ ZHIPU_API_KEY = "a9d09b23922a4f1daccfc896ce087b80.R3uIADh7YBlDzlGq"
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 PATH_DATA_DIR = BASE_DIR / 'data'
-PATH_BGE_M3 = "E:/models/m3e-base"
+
+PATH_BGE_M3 = r"E:\models\m3e-base"
+RERANK_BY_MODEL = True
 PATH_BGE_RERANKER = r"E:\models\bge-reranker-large"
 
 # model device config
