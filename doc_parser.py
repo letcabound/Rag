@@ -13,8 +13,8 @@ from PyPDF2 import PdfReader
 
 class DocParser(object):
 
-    def __init__(self, file_name: str):
-        self.file_dir_path = cfg.PATH_DATA_DIR
+    def __init__(self, file_name: str, file_dir_path: str = cfg.PATH_DATA_DIR):
+        self.file_dir_path = file_dir_path
         self.file_path = os.path.join(self.file_dir_path, file_name)  # 指定处理文件夹中的某个文件
         self.data = []
 

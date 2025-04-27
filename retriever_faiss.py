@@ -33,8 +33,8 @@ class FaissRetriever:
 
 
 if __name__ == '__main__':
-    kn_path = cfg.PATH_FILE_KN
+    file_name = "train_a.pdf"
     model_path = cfg.PATH_BGE_M3
-    kn_data = DocParser(file_path=kn_path).parse_and_split()
+    kn_data = DocParser(file_name=file_name).parse_and_split()
     retriever = FaissRetriever(model_path=model_path, kn_data=kn_data)
     print(retriever.get_top_k("地理学是什么"))

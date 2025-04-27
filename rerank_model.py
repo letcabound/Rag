@@ -1,4 +1,4 @@
-import config
+from config import cfg
 
 import torch
 from sentence_transformers.cross_encoder import CrossEncoder
@@ -29,11 +29,11 @@ class Reranker(object):
 
 
 if __name__ == "__main__":
-    kn_path = config.PATH_FILE_KN
-    model_path = config.PATH_BGE_M3
-    rerank_model_path = config.PATH_BGE_RERANKER
+    file_name = r"train_a.pdf"
+    model_path = cfg.PATH_BGE_M3
+    rerank_model_path = cfg.PATH_BGE_RERANKER
 
-    kn_data = DocParser(file_path=kn_path).parse_and_split()
+    kn_data = DocParser(file_name=file_name).parse_and_split()
     retriever = FaissRetriever(model_path=model_path, kn_data=kn_data)
     reRanker = Reranker(rerank_model_path)
 
