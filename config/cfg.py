@@ -3,7 +3,7 @@ from pathlib import Path
 
 # base LLM
 ZHIPU_MODEL_NAME = "glm-4-flash"
-ZHIPU_API_KEY = "a9d09b23922a4f1daccfc896ce087b80.R3uIADh7YBlDzlGq"
+ZHIPU_API_KEY = "YOUR_API_KEY"
 
 # pretrained model path
 BASE_DIR = Path(__file__).resolve().parent.parent
