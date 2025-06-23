@@ -15,12 +15,14 @@ print(response.json())
 ```
 
 ## 2. 项目启动【python==3.11】
-pip install -r requirements.txt  
-python run.py  
+2.1 pip install -r requirements.txt  
+2.2 python run.py  
+2.3
 在config.cfg.py文件中修改 PATH_BGE_MM3 为embedding模型本地存储目录
 在config.cfg.py文件中修改 PATH_BGE_RERANKER 为rerank模型本地存储目录
 在config.cfg.py文件中修改 ZHIPU_MODEL_NAME 为选用的智谱大模型名称
 在config.cfg.py文件中修改 ZHIPU_MODEL_APIKEY 为选用的智谱大模型APIKEY
+2.4 访问服务：http://127.0.0.1:8000
 
 
 ## 3. other
